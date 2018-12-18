@@ -37,7 +37,11 @@ visualize_clusters(as.character(tsne_clust$Batch),tsne_clust[c("TSNE.1","TSNE.2"
                    title="Sample Labels",marker_size=0.8)
 dev.off()
 
-
-
-
 ```
+
+The t-SNE plot of clustering label is shown as:
+<img src="figures/HumanSkin_BAMMSC.png" style="display: block; margin: auto;" />
+
+
+The t-SNE plot of sample ID is shown as:
+<img src="figures/HumanSKin_Sample.png" style="display: block; margin: auto;" />
