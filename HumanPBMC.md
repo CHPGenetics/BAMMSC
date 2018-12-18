@@ -39,7 +39,7 @@ dev.off()
 
 ```
 
-<img src="figures/HumanPBMC_BAMMSC.pdf" style="display: block; margin: auto;" />
+<img src="figures/HumanPBMC_BAMMSC.png" style="display: block; margin: auto;" />
 
 
 
