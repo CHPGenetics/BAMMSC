@@ -1,6 +1,5 @@
 
-The following R scripts are used to reproduce the results for Mouse lung dataset used in the manuscript. 
-The processed Mouse lung data could be downloaded from the link [Mouselung](https://drive.google.com/open?id=1ldz9MztRJgr2VvlKrzU7gOO4OaCBvgEH)
+## The following R scripts are used to reproduce the results for Mouse lung dataset used in the manuscript. The processed Mouse lung data could be downloaded from the link [Mouselung](https://drive.google.com/open?id=1ldz9MztRJgr2VvlKrzU7gOO4OaCBvgEH)
 
 
 ```
