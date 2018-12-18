@@ -39,7 +39,12 @@ dev.off()
 
 ```
 
+The t-SNE plot of clustering label is shown as:
 <img src="figures/HumanPBMC_BAMMSC.png" style="display: block; margin: auto;" />
+
+
+The t-SNE plot of sample ID is shown as:
+<img src="figures/HumanPBMC_Sample.png" style="display: block; margin: auto;" />
 
 
 
