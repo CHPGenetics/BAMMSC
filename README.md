@@ -22,12 +22,12 @@ install_github("lichen-lab/BAMMSC")
 # Descriptions for BAMMSC
 
 ## Usage
-BAMMSC(X, K=4, option="BAMMSC",€method_cluster_initial="kmeans", method_alpha_initial="Ronning", maxIter.DIMMSC=400, tol.DIMMSC=1e-4, likTol.DIMMSC=1e-2, nBurn=400, maxIter.BAMMSC=500, likTol.BAMMSC=1e-10)
+BAMMSC(X, K=4, option="BAMMSC",â‚¬method_cluster_initial="kmeans", method_alpha_initial="Ronning", maxIter.DIMMSC=400, tol.DIMMSC=1e-4, likTol.DIMMSC=1e-2, nBurn=400, maxIter.BAMMSC=500, likTol.BAMMSC=1e-10)
 
 ## Arguments
 *  X: a list with each element a UMI count matrix for each individual, with row as number of genes and column as number of cells. The numbers of genes are the same across different individuals but the number of cells might differ. If X is a matrix, DIMMSC will be used
 *  K: number of clusters, default is 4
-*  Option: Default is  "BAMMSC"€™; if "€˜DIMMSC"€™, all cells will be combined across individuals and DIMMSC will be used
+*  Option: Default is  "BAMMSC"â‚¬â„¢; if "â‚¬ËœDIMMSC"â‚¬â„¢, all cells will be combined across individuals and DIMMSC will be used
 *  method_cluster_initial: method for initializing clusters in the procedure of DIMMSC, "kmeans" (default) or "random"
 *  method_alpha_initial: method for initializing the alpha matrix in the procedure of DIMMSC, "Ronning" (default, Ronning's method, 1989) or "Weir" (Weir and Hill's method, 2002)
 *  maxiter.DIMMSC: maximum number of iterations for DIMMSC, default is 400
@@ -101,4 +101,17 @@ result=BAMMSC(X=data_BAMMSC,K=4)
 adjustedRandIndex(unlist(result$mem),unlist(Z))
 
 ```
+
+# Use BAMMSC for 10X Genomics 
+Tutorial to use BAMMSC for 10X Genomics could be found at https://github.com/lichen-lab/BAMMSC/blob/master/10XGenomics.md
+
+# Use BAMMSC to run three real datasets in the manuscript
+The Human PBMC data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/HumanPBMC.md
+The Human skin data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/Humanskin.md
+The Mouse lung data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/Mouselung.md
+
+
+
+
+
 
