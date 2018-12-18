@@ -44,4 +44,4 @@ The t-SNE plot of clustering label is shown as:
 
 
 The t-SNE plot of sample ID is shown as:
-<img src="figures/HumanSKin_Sample.png" style="display: block; margin: auto;" />
+<img src="figures/HumanSkin_Sample.png" style="display: block; margin: auto;" />
