@@ -106,8 +106,11 @@ adjustedRandIndex(unlist(result$mem),unlist(Z))
 Tutorial to use BAMMSC for 10X Genomics could be found at https://github.com/lichen-lab/BAMMSC/blob/master/10XGenomics.md
 
 # Use BAMMSC to run three real datasets in the manuscript
+
 The Human PBMC data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/HumanPBMC.md
+
 The Human skin data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/Humanskin.md
+
 The Mouse lung data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/Mouselung.md
 
 
