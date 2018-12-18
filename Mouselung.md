@@ -41,4 +41,8 @@ dev.off()
 ```
 
 
+The t-SNE plot of clustering label is shown as:
+<img src="figures/MouseLung_BAMMSC.png" style="display: block; margin: auto;" />
 
+The t-SNE plot of clustering label is shown as:
+<img src="figures/MouseLung_Sample.png" style="display: block; margin: auto;" />
