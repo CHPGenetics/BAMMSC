@@ -27,7 +27,7 @@ BAMMSC(X, K=4, option="BAMMSC",€method_cluster_initial="kmeans", method_alpha_
 ## Arguments
 *  X: a list with each element a UMI count matrix for each individual, with row as number of genes and column as number of cells. The numbers of genes are the same across different individuals but the number of cells might differ. If X is a matrix, DIMMSC will be used
 *  K: number of clusters, default is 4
-*  Option: Default is  "BAMMSC"€™; if "€˜DIMMSC"€™, all cells will be combined across individuals and DIMMSC will be used
+*  Option: Default is  "BAMMSC"; if "DIMMSC", all cells will be combined across individuals and DIMMSC will be used
 *  method_cluster_initial: method for initializing clusters in the procedure of DIMMSC, "kmeans" (default) or "random"
 *  method_alpha_initial: method for initializing the alpha matrix in the procedure of DIMMSC, "Ronning" (default, Ronning's method, 1989) or "Weir" (Weir and Hill's method, 2002)
 *  maxiter.DIMMSC: maximum number of iterations for DIMMSC, default is 400
