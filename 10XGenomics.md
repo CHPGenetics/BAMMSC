@@ -1,5 +1,5 @@
 # BAMMSC for 10X Genomics
-------------------------------
+
 The output of 10X Genomics cellrangerRkit consists of three files that are matrix.mtx, genes.tsv and barcodes.tsv. In this
 tutorial, we demonstrate how to process the three files to obtain the input format that is needed by BAMMSC for clustering.
 
