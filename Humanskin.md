@@ -1,5 +1,4 @@
-The following R scripts are used to reproduce the results for Human skin dataset used in the manuscript. 
-The processed Human skin data could be downloaded from the link [Humanskin](https://drive.google.com/open?id=1Dk4CLqSdkoR5E00zzV0wETlFZO1lCKLv)
+## The following R scripts are used to reproduce the results for Human skin dataset used in the manuscript. The processed Human skin data could be downloaded from the link [Humanskin](https://drive.google.com/open?id=1Dk4CLqSdkoR5E00zzV0wETlFZO1lCKLv)
 
 ```
 # load packages
