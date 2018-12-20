@@ -6,12 +6,13 @@ tutorial, we demonstrate how to process the three files to obtain the input form
 **Step1: Create a data matrix of for each invidual from output of 10X Genomics cellrangerRkit**
 ----------------------
 ```
+library(Matrix)
 mat=readMM("matrix.mtx") 
 gene_info=read.delim("genes.tsv", stringsAsFactors=FALSE, sep="\t", header=FALSE) 
 barcodes=read.delim("barcodes.tsv", stringsAsFactors=FALSE, sep="\t", header=FALSE) 
 rownames(mat)= gene_info[, 1] 
 colnames(mat)= barcodes[,1] 
-fullmat = as.matrix(mat) 
+mat = as.matrix(mat) 
 pd = data.frame(id = barcodes[, 1], row.names = barcodes[, 1]) 
 colnames(pd) = c("barcode") 
 gene_symbols = gene_info 
@@ -55,7 +56,7 @@ for(l in 1:length(count)){
 ```
 
 
-**Step4: Run BAMMSC to obtain cell label**
+**Step4: Run BAMMSC for cell clusetering**
 ----------------------
 ```
 library(BAMMSC)
