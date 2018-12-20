@@ -19,7 +19,6 @@ result<-BAMMSC(count, K=6, nBurn = 500, maxIter.BAMMSC = 1500)
 adjustedRandIndex(unlist(result$mem)[ApproxTruth[[1]]],ApproxTruth[[2]])
 
 # run t-SNE, colored by clustering label
-library(cellrangerRkit)
 clust<-unlist(result$mem)
 tsne_clust <- data.frame(Barcode=tsne_result[,1],TSNE.1=tsne_result[,2],
                          TSNE.2=tsne_result[,3],Clust=clust)
@@ -43,5 +42,5 @@ dev.off()
 The t-SNE plot of clustering label is shown as:
 <img src="figures/MouseLung_BAMMSC.png" style="display: block; margin: auto;" />
 
-The t-SNE plot of clustering label is shown as:
+The t-SNE plot of sample ID is shown as:
 <img src="figures/MouseLung_Sample.png" style="display: block; margin: auto;" />
