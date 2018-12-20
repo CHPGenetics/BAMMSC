@@ -2,10 +2,10 @@
 A Bayesian mixture model for clustering droplet-based single cell transcriptomic data from population studies
 
 ## Description
-BAMMSC is an R package for clustering droplet-based single cell transcriptomic data from multiple individuals simultaneously. It adopts a Bayesian hierarchical Dirichlet multinomial mixture model, which explicitly characterizes three levels of variabilities (i.e., genes, cell types and individuals). BAMMSC is able to taking account for data heterogeneity and batch effect, such as unbalanced sequencing depths, variable read length and hidden technical bias, among multiple individuals. BAMMSC also integrates DIMMSC for single individual analysis.
+BAMMSC is an R package for clustering droplet-based single cell transcriptomic data from multiple individuals simultaneously. It adopts a Bayesian hierarchical Dirichlet multinomial mixture model, which explicitly characterizes three levels of variabilities (i.e., genes, cell types and individuals). BAMMSC is able to take account for data heterogeneity and batch effect, such as unbalanced sequencing depths, variable read length and hidden technical bias, among multiple individuals. BAMMSC also integrates DIMMSC for single individual analysis.
 
 # Author
-Zhe Sun, Li Chen, Qianhui Huang, Anthony Richard Cillo, Tracy Tabib, Ying Ding, Jay Kolls, Robert Lafyatis, Dario Vignali, Kong Chen, Ming Hu,* and Wei Chen*
+Zhe Sun, Li Chen, Qianhui Huang, Anthony Richard Cillo, Tracy Tabib, Ying Ding, Jay Kolls, Robert Lafyatis, Dario Vignali, Kong Chen, Ming Hu,* and Wei Chen* [link](https://www.biorxiv.org/content/biorxiv/early/2018/08/16/392662.full.pdf)
 
 # Maintainer
 Zhe Sun <zhs31@pitt.edu>, Li Chen <li.chen@auburn.edu>
@@ -22,7 +22,7 @@ install_github("lichen-lab/BAMMSC")
 # Descriptions for BAMMSC
 
 ## Usage
-BAMMSC(X, K=4, option="BAMMSC",€method_cluster_initial="kmeans", method_alpha_initial="Ronning", maxIter.DIMMSC=400, tol.DIMMSC=1e-4, likTol.DIMMSC=1e-2, nBurn=400, maxIter.BAMMSC=500, likTol.BAMMSC=1e-10)
+BAMMSC(X, K=4, option="BAMMSC",method_cluster_initial="kmeans", method_alpha_initial="Ronning", maxIter.DIMMSC=400, tol.DIMMSC=1e-4, likTol.DIMMSC=1e-2, nBurn=400, maxIter.BAMMSC=500, likTol.BAMMSC=1e-10)
 
 ## Arguments
 *  X: a list with each element a UMI count matrix for each individual, with row as number of genes and column as number of cells. The numbers of genes are the same across different individuals but the number of cells might differ. If X is a matrix, DIMMSC will be used
@@ -71,13 +71,13 @@ Use BAMMSC and DIMMSC
 library(BAMMSC)
 data("data_BAMMSC")
 # run BAMMSC across multiple individuals
-result=BAMMSC(data_BAMMSC, K=4)
+result=BAMMSC(data_BAMMSC,K=4)
 
 # Load the example data data_DIMMSC
 # data_DIMMSC contains 1000 genes and 6000 cells.
 data("data_DIMMSC")
 # For single individual, BAMMSC could call DIMMSC in two ways.
-result=DIMMSC(data_DIMMSC, K=3)
+result=DIMMSC(data_DIMMSC,K=3)
 result=BAMMSC (data_DIMMSC,K=3)
 ```
 
@@ -105,6 +105,7 @@ adjustedRandIndex(unlist(result$mem),unlist(Z))
 # Use BAMMSC for 10X Genomics 
 Tutorial to use BAMMSC for 10X Genomics could be found at https://github.com/lichen-lab/BAMMSC/blob/master/10XGenomics.md
 
+
 # Use BAMMSC to run three real datasets
 
 The Human PBMC data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/HumanPBMC.md
@@ -113,6 +114,9 @@ The Human skin data analysis could be found at https://github.com/lichen-lab/BAM
 
 The Mouse lung data analysis could be found at https://github.com/lichen-lab/BAMMSC/blob/master/Mouselung.md
 
+# Fastq files of three real datasets
+
+All fastq files could be downloaded [here](https://pitt.app.box.com/s/aqwl3aedfqxp41oecvudybv9h9u0t4ai)
 
 
 
